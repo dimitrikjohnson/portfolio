@@ -1,0 +1,33 @@
+---
+import H2 from "./reusableUIelements/H2.astro";
+import ExperienceEducationCard from "./reusableUIelements/ExperienceEducationCard.astro";
+import TitleWithLink from "./reusableUIelements/TitleWithLink.astro";
+---
+<section id="experience" class="mb-24 lg:mb-32">
+    <H2 heading="Experience" />
+    <ul class="mb-14">
+        <ExperienceEducationCard
+            start="2022"
+            end="Present"
+            title="Web Developer &#183; UVA's Miller Center"
+            description="Design and develop new website features based on stakeholder requirements. Manage the website's compliance with WCAG (Web Content Accessibility Guidelines). Share code and use best version control practices through Git. Troubleshoot and debug front-end website issues."
+            link="https://millercenter.org/"
+            techUsed={
+                ["HTML", "SCSS", "JavaScript", "Drupal", "Twig", "PHP", "Git", "Docker", "AWS", "Jira"]
+            }
+        />
+        <ExperienceEducationCard
+            start="2018"
+            end="2022"
+            title="IST Instructional Assistant &#183; Germanna Community College"
+            subtitle="Academic Tutor"
+            description="Facilitated Python and Java study group sessions. Conducted 100+ tutoring appointers per semester for students learning those languages. Mentored new tutors and conducted training sessions for all tutors in the center."
+            techUsed={
+                ["Python", "Java", "HTML", "CSS", "Google Apps Script"]
+            }
+        />
+    </ul>
+    <p class="font-medium text-zinc-200 inline-block">
+        <TitleWithLink title={ "View Full Resume" } link={ "../resume.pdf" } />
+    </p>
+</section>

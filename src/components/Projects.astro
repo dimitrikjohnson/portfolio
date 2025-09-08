@@ -1,0 +1,32 @@
+---
+import H2 from "./reusableUIelements/H2.astro";
+import BigFootballScreenshot from "../images/bigfootball-homepage.png";
+import ProjectCard from "./reusableUIelements/ProjectCard.astro";
+import Memoji from "../images/memoji.png"
+---
+<section id="projects" class="mb-24 lg:mb-32">
+    <H2 heading="Projects" />
+    <ul>
+        <ProjectCard 
+            title="Big Football"
+            link="https://bigfootball.co"
+            github="https://github.com/dimitrikjohnson/nfl-project"
+            image={BigFootballScreenshot}
+            imageAlt="Big Football homepage screenshot"
+            description="A website built with Next.js that delivers dynamic NFL content. Each team has its own dashboard featuring game schedules and results, team and player statistics, full rosters, conference and division standings, and more."
+            techUsed={
+                ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"]    
+            }
+        />
+        <ProjectCard 
+            title="Portfolio (this website)"
+            github="https://github.com/dimitrikjohnson/portfolio"
+            image={Memoji}
+            imageAlt="Apple memoji behind laptop"
+            description="My first portfolio website."
+            techUsed={
+                ["Astro", "Tailwind CSS", "Vercel"]    
+            }
+        />
+    </ul>
+</section>

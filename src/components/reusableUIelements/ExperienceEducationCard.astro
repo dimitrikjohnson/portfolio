@@ -1,0 +1,32 @@
+---
+import TechUsed from "./TechUsed.astro";
+import Card from "./Card.astro";
+import TitleWithLink from "./TitleWithLink.astro";
+const { start, end, techUsed, title, subtitle, description, link } = Astro.props;
+
+// A template for the cards in the Experience and Education sections
+---
+<Card>
+    <header 
+        slot="left"
+        class="mb-1.5 lg:mb-0 text-sm font-semibold shrink-0 uppercase" 
+        aria-label={start + `${end && "to " + end}`}
+    >
+        { start } { end && ` - ${end}` }
+    </header>
+    <Fragment slot="right">
+        <h3 class="font-medium mb-3">
+            { link 
+                ? <TitleWithLink title={ title } link={ link } />
+                : <span>{title}</span>
+            }     
+            { subtitle && 
+                <div class="text-zinc-400" aria-hidden="true">{subtitle}</div>
+            }
+        </h3>
+        { description &&
+            <p class="text-sm leading-normal">{ description }</p>
+        }
+        <TechUsed techUsed={techUsed} />
+    </Fragment>
+</Card>

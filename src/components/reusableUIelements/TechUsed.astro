@@ -1,0 +1,8 @@
+---
+const { techUsed } = Astro.props;
+---
+<ul class="flex gap-x-1.5 gap-y-2 flex-wrap text-xs items-center mt-6" aria-label="Technologies used">
+    { techUsed.map((tech: string) => 
+        <li class="bg-green-400/10 text-green-300 font-medium py-1.5 px-2.5 rounded-full">{ tech }</li>
+    )} 
+</ul>

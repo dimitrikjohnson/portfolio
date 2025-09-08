@@ -1,0 +1,12 @@
+---
+import { Icon } from 'astro-icon/components';
+const { title, link } = Astro.props;
+---
+
+<a href={ link } class="flex gap-1 items-center hover:text-green-300 group" target="_blank" title="(opens in new tab)">
+    <span>{title}</span>
+    <Icon 
+        name="eva:diagonal-arrow-right-up-fill" 
+        class="text-lg inline-block group-hover:transition duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:hover:transform-none" 
+    />
+</a>

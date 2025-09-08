@@ -1,0 +1,18 @@
+---
+import H2 from "./reusableUIelements/H2.astro";
+import ExperienceEducationCard from "./reusableUIelements/ExperienceEducationCard.astro";
+---
+<section id="education" class="mb-20">
+    <H2 heading="Education" />
+    <ul>
+        <ExperienceEducationCard
+            start="2022"
+            title="Bachelor of Science &#183; Information Technology"
+            subtitle="George Mason University"
+            description="Concentration: Web Development"
+            techUsed={
+                ["HTML", "CSS", "JavaScript", "SQL", "Python", "Git", "Swift"]
+            }
+        />
+    </ul>
+</section>

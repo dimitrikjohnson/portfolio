@@ -1,0 +1,36 @@
+---
+import TechUsed from "./TechUsed.astro";
+import Card from "./Card.astro";
+import TitleWithLink from "./TitleWithLink.astro";
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+const { title, link, github, image, imageAlt, description, techUsed } = Astro.props;
+
+// A template for the cards in the Projects section
+---
+<Card>
+    <Image 
+        slot="left"
+        class="aspect-video rounded border-2 border-zinc-200/10 object-cover mb-5 lg:mb-0" 
+        src={ image } 
+        alt={ imageAlt } 
+    />
+    <Fragment slot="right">
+        <div class="flex justify-between items-center mb-3">
+            <h3 class="font-medium">
+                { link 
+                    ? <TitleWithLink title={ title } link={ link } />
+                    : <span>{ title }</span>
+                } 
+            </h3>
+            { github &&
+                <a href={ github } class="hover:text-green-300 text-2xl" title="(opens in new tab)" target="_blank" aria-label="GitHub">
+                    <span class="sr-only">View {title} on GitHub</span>
+                    <Icon name="octicon:mark-github-16" />
+			    </a>
+            }              
+        </div>
+        <p class="text-sm leading-normal">{ description }</p>
+        <TechUsed techUsed={ techUsed } />
+    </Fragment>
+</Card>

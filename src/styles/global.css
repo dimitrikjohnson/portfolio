@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter Variable', 'sans-serif';
+}
+
+h1, h2, h3 {
+    @apply text-zinc-200;
+}
