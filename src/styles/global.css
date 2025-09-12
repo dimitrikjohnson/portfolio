@@ -7,3 +7,7 @@
 h1, h2, h3 {
     @apply text-zinc-200;
 }
+
+#about p a {
+  @apply font-medium text-zinc-200 hover:text-green-300
+}
