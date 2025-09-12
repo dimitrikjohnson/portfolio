@@ -1,10 +1,30 @@
 ---
 import H2 from "./reusableUIelements/H2.astro";
+
+const spaceBetweenParas = "mb-5";
 ---
 <section id="about" class="mb-24 lg:mb-32">
-    <H2 heading="About" />
-    <div>
-        <p class="font-medium mb-3">⏲️ Coming soon ...</p>
-        <p>For now, please explore the rest of my portfolio.</p>
+    <H2 heading="About Me" />
+    <div class="leading-[26px]">
+        <p class={spaceBetweenParas}>
+            I'm a developer who's passionate about bringing ideas to life with my code. For me, the best part of development is problem 
+            solving — taking an idea, breaking it down into pieces, and building a real, useful product.
+        </p>
+        <p class={spaceBetweenParas}>
+            I'm currently a web developer at 
+            <a href="https://millercenter.org/" title="(opens in new tab)" target="_blank">University of Virginia's Miller Center</a>,
+            where I manage and build features for our Drupal website. Alongside frontend development, I also manage SEO (search engine 
+            optimization) and ensure our site meets web accessibility standards.
+        </p>
+        <p class={spaceBetweenParas}>
+            In my free time, I've worked with technologies like Next.js, Astro, Tailwind CSS, and TypeScript to turn personal ideas into 
+            real-world applications. I'm especially proud of personal projects like <a href="https://bigfootball.co" title="(opens in new tab)" target="_blank">Big Football</a>, 
+            which combines my passion for football and development by delivering dynamic NFL content through dashboards that feature team and player 
+            statistics, game schedules, standings, and rosters.
+        </p>
+        <p>
+            When I'm not writing code, I enjoy spending time with my girlfriend, obesessing over my fantasy football team, and going for 
+            walks to recharge.
+        </p>
     </div>
 </section>
