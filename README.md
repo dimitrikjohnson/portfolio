@@ -1,4 +1,4 @@
-<img src="/og.png" width="100%" alt="Dimitrik Johnson - Front End Developer" >
+<img src="public/og.png" width="100%" alt="Dimitrik Johnson - Front End Developer" >
 
 ## 🚀 Project Structure
 
