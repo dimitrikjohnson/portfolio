@@ -1,10 +1,11 @@
 ---
 import { Icon } from 'astro-icon/components';
+import IntroHeading from './IntroHeading';
 ---
 
 <header class="lg:sticky lg:top-0 lg:max-h-screen pb-28 lg:py-28 lg:w-[45%]">
 	<div class="mb-8 lg:mb-20">
-		<h1 class="text-4xl sm:text-5xl mb-3 font-bold">Dimitrik Johnson</h1>
+		<IntroHeading client:load />
 		<h2 class="text-xl mb-4 font-medium">Front End Developer</h2>
 		<p class="max-w-xs">I thrive on turning ideas into tangible digital experiences.</p>	
 		{ /* Add jump links later

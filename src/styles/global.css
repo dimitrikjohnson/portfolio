@@ -8,6 +8,10 @@ h1, h2, h3 {
     @apply text-zinc-200;
 }
 
+#h1-intro {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
 #about p a {
   @apply font-medium text-zinc-200 hover:text-green-300
 }
