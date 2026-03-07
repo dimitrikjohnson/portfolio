@@ -27,3 +27,5 @@
 ```
 
 The typing animation is a [JavaScript library](https://github.com/mattboldt/typed.js) created by [Matt Boldt](https://mattboldt.com/).
+
+Icons are imported from [Iconify](https://icon-sets.iconify.design/).
