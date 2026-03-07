@@ -2,10 +2,11 @@
 import H2 from "./reusableUIelements/H2.astro";
 import BigFootballScreenshot from "../assets/bigfootball-homepage.png";
 import ProjectCard from "./reusableUIelements/ProjectCard.astro";
-import Memoji from "../assets/memoji.png"
+import Memoji from "../assets/memoji.png";
+import MCLogo from "../assets/mc-logo.png";
 ---
 <section id="projects" class="mb-24 lg:mb-32">
-    <H2 heading="Projects" />
+    <H2 heading="Projects" icon="fa6-solid:code" />
     <ul>
         <ProjectCard 
             title="Big Football"
@@ -13,9 +14,21 @@ import Memoji from "../assets/memoji.png"
             github="https://github.com/dimitrikjohnson/nfl-project"
             image={BigFootballScreenshot}
             imageAlt="Big Football homepage screenshot"
-            description="A website built with Next.js that delivers dynamic NFL content. Teams and players have their own dashboards featuring game schedules and results, statistics, rosters, conference and division standings, and more."
+            description="Built a data-driven NFL web app that integrates external REST APIs and implements reusable UI components, server-side rendering, \
+                and client-side state management. Implemented search and filtering features to improve discovery of teams and players."
             techUsed={
-                ["Next.js", "Tailwind CSS", "TypeScript", "PostgreSQL", "Vercel"]    
+                ["React", "Next.js", "Tailwind CSS", "TypeScript", "PostgreSQL", "Vercel"]    
+            }
+        />
+        <ProjectCard 
+            title="Election 2024 Blog - Custom Drupal Module"
+            link="https://millercenter.org/election-2024-and-transition"
+            image={MCLogo}
+            imageAlt="Miller Center logo"
+            description="Built a custom Drupal 11 module enabling Communications staff to publish structured blog posts via \
+                CKEditor 5; implemented automatic date-based sorting and conditional “Show More” functionality using PHP, JavaScript, and Twig."
+            techUsed={
+                ["Drupal 11", "JavaScript", "Twig", "SCSS", "PHP"]    
             }
         />
         <ProjectCard 
