@@ -9,7 +9,7 @@ const { start, end, techUsed, title, subtitle, description, link } = Astro.props
 <Card>
     <header 
         slot="left"
-        class="mb-1.5 lg:mb-0 text-sm font-semibold shrink-0 uppercase" 
+        class="mb-1.5 lg:mb-0 text-sm font-semibold shrink-0" 
         aria-label={start + `${end && "to " + end}`}
     >
         { start } { end && ` - ${end}` }
